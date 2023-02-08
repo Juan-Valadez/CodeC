@@ -32,14 +32,14 @@ break;
 
 //wireshark
 case 3:
-system("apt update");
-system("apt upgrade -y");
+system("apt-get update");
+system("apt-get upgrade -y");
 system("apt install wireshark");
 break;
 
 case 4:
-system("apt update");
-system("apt upgrade");
+system("apt-get update");
+system("apt-get upgrade");
 system("apt-get intall wireshark");
 break;
 
@@ -54,8 +54,7 @@ break;
 
 //actualizar 
 case 7:
-system("apt update");
-system("apt upgrade");
+system("apt-get update && apt-get upgrade");
 break;
 }
 return 0;
